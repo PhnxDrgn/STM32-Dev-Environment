@@ -1,0 +1,10 @@
+services:
+  toolchain:
+    build: ./toolchain
+    volumes:
+      - ./firmware:/workspace
+      - ~/.ssh:/root/.ssh:ro              # mount host ssh
+      - ./toolchain/.bashrc:/root/.bashrc # mount .bashrc
+    working_dir: /workspace
+    tty: true
+    stdin_open: true

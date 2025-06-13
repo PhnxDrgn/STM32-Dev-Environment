@@ -1,0 +1,5 @@
+############### FIRMWARE ###############
+firmware/*
+# keep .keep so it can save the directory
+!firmware/.keep
+########################################
